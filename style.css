@@ -10,29 +10,26 @@
   --color-border: #C7C7C7;
 }
 
-/* Si usas el archivo OTF, mantenlo igual */
 @font-face {
   font-family: DoctorGlitch;
   src: url(Fonts/doctor_glitch/Doctor\ Glitch.otf);
 }
 
-/* ==========================
-   BASE
-========================== */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html, body {
+body,
+html {
   height: 100%;
-  color: #fff;
+  color: white;
   background-color: #dedede;
 }
 
-/* ==========================
-   HERO SECTION
-========================== */
 .Hero-section {
   width: 100%;
-  height: 100vh;
   background-image: url(fotos/A7R4720-scaled.jpg);
   background-size: cover;
   background-position: center top;
@@ -47,9 +44,9 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  & .branding {
+  .branding {
     flex: 1;
-    max-width: 644px;
+    width: auto;
     height: 146px;
     background-image: url(fotos/saikoLogoWhite.svg);
     background-size: contain;
@@ -57,19 +54,19 @@ header {
     background-repeat: no-repeat;
   }
 
-  & nav {
+  nav {
     font-family: DoctorGlitch;
-    font-size: clamp(1rem, 1vw + 1rem, 1.8rem);
+    font-size: clamp(0.5rem, -0.214rem + 1.905vw, 1.5rem);
 
-    & ul {
+    ul {
       list-style: none;
       display: flex;
       justify-content: end;
       align-items: center;
       gap: 2rem;
 
-      & li {
-        & a {
+      li {
+        a {
           text-transform: uppercase;
           text-decoration: none;
           color: var(--PrimaryColor);
@@ -81,45 +78,61 @@ header {
           gap: 1rem;
         }
       }
+      .burguer{
+        width: 30px;
+        height: 30px;
+        /* border: solid 1px red; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: none;
+
+
+        span{
+          border: 1px solid white;
+          width: 100%;
+          height: 1px;
+          display: inline-block;
+        }
+      }
     }
   }
 }
 
-/* ==========================
-   HERO CONTENT
-========================== */
 .hero {
   color: var(--PrimaryColor);
+  height: 800px;
 
-  & .content {
+  .content {
     position: relative;
     width: 50%;
     text-align: center;
-    margin: 200px auto 0;
+    margin-top: 200px;
   }
 
-  & .saiko {
+  .saiko {
     position: relative;
     font-family: "Wide Latin", serif;
     font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
     text-transform: uppercase;
     display: inline-block;
 
-    & .back {
+    .back {
       position: absolute;
       left: -3px;
       color: var(--PrimaryColor);
       opacity: 1;
     }
 
-    & .front {
+    .front {
       position: relative;
       color: var(--Text-Color);
       opacity: 0.6;
     }
   }
 
-  & .where {
+  .where {
     font-family: "Wide Latin", serif;
     font-size: clamp(1.5rem, 4.5vw, 3.75rem);
     text-transform: uppercase;
@@ -130,113 +143,125 @@ header {
     line-height: 0.90;
   }
 
-  & .btn-primary {
+  .btn-primary {
     font-family: Montserrat, sans-serif;
     width: 363.5px;
     height: 75.5px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--Blue-Color);
+    background-color: var(--color-EVMer);
+    border: 4px solid var(--color-border);
     color: white;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
     transition: 0.3s;
-    font-size: 2rem;
-
-    &:hover { background-color: rgba(0,0,255,0.8); }
+    font-size: clamp(1.5rem, 0.286rem + 1.905vw, 2rem); 
+    &:hover {
+      background-color: rgba(137, 137, 137, 0.8);
+    }
   }
 }
 
-/* ==========================
-   DIFUMIN
-========================== */
+
 .difumin {
   width: 100%;
   height: 30px;
   background: linear-gradient(to bottom, black, #dedede);
 }
 
-/* ==========================
-   HERO OTHER
-========================== */
+
 .heroOther {
   width: 100%;
-  height: calc(100vh - 30px);
   display: flex;
+  /* border:  solid 4px blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  & .conText {
+
+  .conText {
     flex: 1;
     width: 100%;
-    height: calc(100vh - 30px);
+    /* height: calc(100vh - 30px); */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border:  solid 4px red; */
+    padding-left: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 
-    & .textheroOther {
+    .textheroOther {
       font-family: Montserrat;
       color: var(--Text-Color);
-      font-size: 2.25rem;
-      width: 655px;
-      text-align: center;
+      font-size: clamp(1.5rem, 0.964rem + 1.429vw, 2.25rem);
+      width: 75%;
     }
 
-    & .btn-primary {
+    .btn-primary {
       font-family: Montserrat, sans-serif;
       width: 45px;
       height: 45px;
       display: inline-block;
       text-align: center;
-      background-color: var(--Blue-Color);
+      background-color: var(--color-EVMer);
+      border: 4px solid var(--color-border);
       color: white;
       text-decoration: none;
       border-radius: 5px;
       transition: 0.3s;
       font-size: 2.2rem;
 
-      &:hover { background-color: rgba(0, 0, 255, 0.8); }
+      &:hover {
+        background-color: rgba(137, 137, 137, 0.8);
+      }
     }
   }
 
-  & .imgheroOther {
+  .imgheroOther {
     flex: 1;
-    width: 50%;
+    width: 100%;
+    height: 1000px;
     background-image: url(fotos/saiko-esquire-1-685297a51aa60.jpg);
-    background-size: 90%;
+    background-size: 100%;
     background-position: center left;
     background-repeat: no-repeat;
   }
 }
 
-/* ==========================
-   BIOGRAPHY
-========================== */
+
 .biography {
+  width: 100%;
   text-align: center;
   font-family: "Wide Latin", serif;
+  /* text-transform: uppercase; */
   margin-top: 5%;
 
-  & .textBI {
+  .textBI {
     text-transform: uppercase;
     margin-bottom: 8%;
   }
 
-  & .partVid {
+  .partVid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 55px 0 35px;
 
-    & .vidyt {
+    .vidyt {
       flex: 1;
       display: flex;
       justify-content: center;
     }
 
-    & .tat1,
-    & .tat2 {
+    .tat1,
+    .tat2 {
       flex: 0 0 14vw;
       height: 70vh;
       background-image: url("fotos/ChatGPT Image 24 oct 2025, 12_06_33.png");
@@ -248,173 +273,269 @@ header {
   }
 }
 
-/* ==========================
-   TIMELINE
-========================== */
-.timeline {
-  position: relative;
+.firsTimeline{
+  display: none;
   width: 100%;
-  max-width: 80%;
-  margin: 8rem auto;
-  padding: 2rem 0;
-  font-family: "Montserrat", sans-serif;
-  color: var(--PrimaryColor);
+  padding-top: 8rem;
 
-  & ul {
-    list-style: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 5%;
-      width: 3px;
-      height: 70%;
-      background: var(--color-EVMer);
+  .logo{
+    margin-bottom: 3rem;
+    height:100px;
+    background-image: url("fotos/saikoLogoWhite.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .timeline2{
+    /* border: #333333 1px solid; */
+    padding: 2rem 6.5rem 5rem 6.5rem;
+    
+    .year {
+      font-size: 1.2rem;
+      width: fit-content;
+      padding: .5rem;
+      /* margin-bottom: 1rem; */
+      background-color: var(--color-border);
+      /* border: 10px var(--color-border) solid; */
     }
 
-    & li {
-      position: relative;
-      width: 100%;
-      padding: 2rem 0 4rem 8%;
-      box-sizing: border-box;
-      transition: all 0.6s ease-out;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0rem;
-        left: 4.4%;
-        width: 20px;
-        height: 20px;
-        background: var(--color-EVMer);
-        border-radius: 50%;
-        box-shadow: var(--Text-Color);
+    .card{
+      padding: 4rem;
+      font-family: "Montserrat", sans-serif;
+      background-color: var(--color-EVMer);
+      border: 20px var(--color-border) solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: start;
+      gap: 2rem;
+      p{
+        width: 80%;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
       }
 
-      & .timeline-year {
-        position: absolute;
-        left: -3%;
-        top: 0;
-        font-family: "Wide Latin";
-        color: var(--Text-Color);
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-
-      & .timeline-card {
-        background-color: var(--color-EVMer);
-        border: 20px solid var(--color-border);
-        border-radius: 15px;
-        padding: 2rem;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        margin-left: 10%;
-        transition: all 0.3s ease;
-
-        &:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 35px rgba(58, 58, 58, 0.2);
-        }
-
-        & img {
-          margin-top: 1rem;
-          border-radius: 10px;
-          width: 80%;
-          height: auto;
-          object-fit: cover;
-        }
-
-        & p {
-          color: var(--PrimaryColor);
-          width: 80%;
-          font-size: 1.5rem;
-          line-height: 1.6;
-          text-align: justify;
-          align-items: center;
-        }
-      }
-
-      &:last-child {
-        position: relative;
-        padding-left: 0;
-        margin-top: 4rem;
-
-        &::before {
-          background: var(--color-EVMer);
-          box-shadow: 0 0 15px rgba(151, 151, 151, 0.7);
-        }
-
-        & .timeline-card {
-          width: 100%;
-          margin: 0 auto;
-          margin-top: .5rem;
-          background-color: var(--color-EVMer);
-          border: var(--color-border) 20px solid;
-          border-radius: 15px;
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-          padding: 3rem;
-          gap: 2rem;
-          text-align: justify;
-
-          & img {
-            max-width: 90%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 15px;
-          }
-
-          & p {
-            width: 80%;
-            font-size: 1.4rem;
-            line-height: 1.8;
-            color: var(--PrimaryColor);
-            text-align: justify;
-          }
-        }
+      img{
+        width: 80%;
       }
     }
   }
 }
 
-/* ==========================
-   ALBUM
-========================== */
+.timeline {
+  
+  position: relative;
+  width: 80%;
+  margin: 8rem auto;
+  padding: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--PrimaryColor);
+}
+
+/* Línea vertical */
+.timeline ul {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 3px;
+  height: 100%;
+  background: var(--Blue-Color);
+  opacity: 0.6;
+}
+
+/* Cada evento */
+.timeline ul li {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0 4rem 8%;
+}
+
+/* Punto circular */
+.timeline ul li::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: 4.4%;
+  width: 20px;
+  height: 20px;
+  background: var(--color-EVMer);
+  border-radius: 50%;
+  box-shadow: var(--Text-Color);
+}
+
+.timeline ul li:first-child::before {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  left: -5rem;
+  width: 300px;
+  height: 120px;
+  background: var(--color-EVMer);
+  border-radius: 50%;
+  box-shadow: var(--Text-Color);
+  background-image: url("fotos/saikoLogoWhite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
+
+/* Año */
+.timeline ul li .timeline-year {
+  position: absolute;
+  left: -3%;
+  top: 0;
+  font-family: "Wide Latin";
+  color: var(--Text-Color);
+  font-size:1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Tarjeta general */
+.timeline ul li .timeline-card {
+  background-color: var(--color-EVMer);
+  border: 20px solid var(--color-border);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-left: 10%;
+  transition: all 0.3s ease;
+}
+
+.timeline ul li .timeline-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(58, 58, 58, 0.2);
+}
+
+/* Imagen */
+.timeline ul li .timeline-card img {
+  margin-top: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Texto */
+.timeline ul li .timeline-card p {
+  color: var(--PrimaryColor);
+  width: 80%;
+  font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+  line-height: 1.6;
+  text-align: justify;
+  align-items: center;
+}
+
+/* Corta la línea antes del último punto */
+.timeline ul::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 5%;
+  width: 3px;
+  height: 70%; 
+  background: var(--color-EVMer);
+  /* opacity: 0.6; */
+}
+
+/* Último punto 2025 */
+.timeline ul li:last-child::before {
+  background: var(--color-EVMer);
+  box-shadow: 0 0 15px rgba(151, 151, 151, 0.7);
+}
+
+/* Último card (fuera de la línea) */
+.timeline ul li:last-child {
+  position: relative;
+  padding-left: 0;
+  margin-top: 4rem;
+}
+
+/* Card 2025 */
+.timeline ul li:last-child .timeline-card {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: .5rem;
+  background-color: var(--color-EVMer);
+  border: var(--color-border) 20px solid;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem;
+  gap: 2rem;
+  text-align: justify;
+}
+
+/* Imagen del último card */
+.timeline ul li:last-child .timeline-card img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+/* Texto del último card */
+.timeline ul li:last-child .timeline-card p {
+  width: 80%;
+  font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+  line-height: 1.8;
+  color: var(--PrimaryColor);
+  text-align: justify;
+}
+
+
+/* ------------------- ALBUM --------------------- */
+
 .album {
   width: 100%;
-  height: 170vh;
+  /* border: 1px solid red; */
+  /* margin: 0 ; */
+  /* padding: 0; */
+  text-align: center;
 
-  & .album-header {
+
+  .album-header {
     text-transform: uppercase;
+    /* border: 1px solid green; */
   }
 
-  & .album-subheader {
+  .album-subheader {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding: 0; */
     margin: 3rem 30rem 0rem 20rem;
+    /* border: 1px solid red;; */
+
   }
 
-  & .content-album {
+  .content-album {
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50%;
+    height: 800px;
 
-    & .img-album {
+    .img-album {
+      /* border: 1px solid red; */
       width: 40%;
       height: 100%;
       margin-left: 6.5rem;
@@ -424,22 +545,31 @@ header {
       background-repeat: no-repeat;
     }
 
-    & .container-songs-album {
+    .container-songs-album {
+      /* border: 1px solid blue; */
       width: 60%;
       height: 100%;
+
       display: flex;
       justify-content: space-between;
+      align-items: start;
 
-      & .cont-left {
+
+
+
+      .cont-left {
         width: 50%;
         height: 100%;
+        /* border: 1px solid yellow; */
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 6rem;
+        padding-top: 6rem;
 
-        & .cont-song {
+        .cont-song {
           font-size: 1.6rem;
+          text-shadow: 1px 1px 2px var(--color-EVMer);
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -447,15 +577,17 @@ header {
         }
       }
 
-      & .cont-right {
+      .cont-right {
         width: 50%;
         height: 100%;
+        /* border: 1px solid palevioletred; */
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5rem;
+        padding-top: 6rem;
 
-        & .cont-song {
+        .cont-song {
           font-size: 1.6rem;
           margin-left: -3rem;
           display: flex;
@@ -464,108 +596,129 @@ header {
           gap: 1rem;
         }
 
-        & .num2cif {
-          & .cont-song { gap: .1rem; }
+        .num2cif {
+          .cont-song {
+            gap: .1rem;
+          }
         }
       }
     }
   }
 
-  & .other-album {
+  .other-album {
     height: 40%;
     width: 100%;
     padding: 0 6.5rem;
 
-    & .other-album-text {
+    .other-album-text {
       text-transform: uppercase;
       margin: 3rem 0 4rem 0;
     }
 
-    & .content-other-album {
+    .content-other-album {
       display: flex;
+      /* align-items: center; */
       justify-content: space-between;
       gap: 4rem;
 
-      & .oa-left,
-      & .oa-right {
+      .oa-left {
         width: 50%;
         height: 500px;
+        /* border: 1px solid red; */
       }
+
+      .oa-right {
+        width: 50%;
+        height: 500px;
+        /* border: 1px solid blue; */
+      }
+
     }
   }
 }
 
-/* ==========================
-   ON TOUR
-========================== */
 .onTour {
-  height: 130vh;
-  width: 100%;
 
-  & .onTourheader {
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+
+  .onTourheader {
+    /* border: 1px solid green; */
     text-transform: uppercase;
-    margin: 50px;
+    margin-top: 200px;
   }
 
-  & .contentonTour {
-    height: 90%;
+  .contentonTour {
+    /* border:1px solid blue; */
+    height: 1000px;
+
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 
-    & .onTourimg {
+    .onTourimg {
+      border: 1px solid yellow;
       width: 40%;
-      height: 90%;
+      height: 100%;
       background-image: url(fotos/fotooAllbum.png);
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
       margin-left: 6.5rem;
+
     }
 
-    & .onTourmap {
+    .onTourmap {
+      /* border: 1px solid red; */
       width: 50%;
       height: 90%;
+
       background-image: url(fotos/mapatour.png);
       background-size: contain;
       background-position: left center;
       background-repeat: no-repeat;
     }
+
   }
+
 }
 
-/* ==========================
-   EVENTS
-========================== */
 .events {
-  height: 160vh;
   width: 100%;
   border: 1px solid red;
+  padding-bottom: 6rem;
 
-  & .eventheader {
+
+  
+
+  .eventheader {
     height: 30px;
     background-color: var(--color-EVMer);
   }
 
-  & h1 {
+  h1 {
     text-transform: uppercase;
     text-align: start;
     margin-left: 6.5rem;
     margin-bottom: 2rem;
-  }
 
-  & .eventcontent {
+  }
+  .eventcontent{
     height: 100%;
     width: 100%;
+    /* border: #333333 solid 1px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
   }
-
-  & .eventsDay {
+  .eventsDay {
+    /* border: 1px solid blue; */
     margin: 10px 0;
     height: 100px;
     margin: 0 6.5rem;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -574,9 +727,12 @@ header {
     gap: 4rem;
     border-bottom: 1px solid #333333;
     padding-bottom: 2rem;
-    color: #333333;
+    
+    
+    color: #333333 ;
 
-    & .day {
+    .day {
+      /* border: 1px solid green; */
       width: 150px;
       height: 100%;
       display: flex;
@@ -584,40 +740,62 @@ header {
       align-items: center;
       justify-content: center;
       text-align: center;
+      font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+      
+      
     }
 
-    & .different {
+    .differentday{
       color: #333333;
-      opacity: .5;
-      text-decoration: line-through;
+      opacity: ;
+      width: 150px;
+      height: 100%;
+      text-decoration:line-through;
+      font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 2rem;
+      p{
+        opacity: .5;
+      }
+    
     }
 
-    & .textdy {
+    .textdy {
+      /* border: 1px solid brown; */
       font-family: Montserrat;
+      
       display: flex;
       align-items: start;
       justify-content: center;
       flex-direction: column;
       gap: .4rem;
-
-      & h3 {
-        font-size: 3rem;
+      
+      
+      h3{
+        font-size: clamp(2rem, 1.286rem + 1.905vw, 3rem);
         font-weight: normal;
       }
 
-      & p {
-        font-size: 1.5rem;
+      p{
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
         font-weight: normal;
       }
-
-      & .different {
+       
+      .different {
         color: #333333;
         opacity: .5;
-        text-decoration: line-through;
+        text-decoration:line-through;
       }
+        
+
+
+      
     }
 
-    & a {
+    a {
       font-family: Montserrat;
       text-decoration: none;
       display: flex;
@@ -632,33 +810,31 @@ header {
   }
 }
 
-/* ==========================
-   MERCHANDISING
-========================== */
 .merchandising {
-  height: 100vh;
   width: 100%;
 
-  & .merch-header {
+  .merch-header {
     background-color: var(--color-EVMer);
     height: 40px;
 
-    & h1 {
+    h1 {
       text-transform: uppercase;
       text-align: start;
       margin-left: 6.5rem;
     }
   }
 
-  & .content-merch {
-    height: 100%;
+  .content-merch {
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    /* padding: 2rem 0; */
     margin-bottom: 2rem;
 
-    & .merch-logo {
+
+    .merch-logo {
       margin-top: 4rem;
       margin-bottom: -2rem;
       width: 644px;
@@ -667,123 +843,136 @@ header {
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
+      /* border: 1px solid red; */
+
     }
 
-    & .merch-grid {
-      height: 70%;
-      width: 85%;
+    .merch-grid {
+      height: 100%;
+      width: 85%; 
       display: flex;
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
       gap: 3rem;
+      /* border: 1px solid blue; */
+      margin: 3rem 0 10rem 0;
 
-      & .merch-cardborder {
+      .merch-cardborder {
         background-color: var(--color-EVMer);
         border: 3px solid #C7C7C7;
-        height: 80%;
+        height: 100%;
         width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        & .merch-card {
+        .merch-card {
           padding: 2rem;
-          height: 99%;
-          width: 99%;
+          width: 100%;
           background-color: var(--PrimaryColor);
           gap: 3rem;
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
 
-          & .merch-img1 {
+
+          .merch-img1 {
             width: 100%;
-            height: 50%;
+            height: 300px;
             background-image: url(fotos/S3456f398d50c499cae25d20ff7646f54e.jpg);
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
+            /* border: 1px solid red; */
           }
 
-          & .merch-img2 {
+          .merch-img2 {
             width: 100%;
-            height: 50%;
+            height: 300px;
             background-image: url(fotos/IMG-2072.jpg);
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
+            /* border: 1px solid red; */
           }
 
-          & .merch-img3 {
+          .merch-img3 {
             width: 100%;
-            height: 50%;
+            height: 300px;
             background-image: url(fotos/xvJWEtPak7DkDuO-Photoroom.jpg);
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
+            /* border: 1px solid red; */
           }
 
-          & .merch-img4 {
+          .merch-img4 {
             width: 100%;
-            height: 50%;
+            height: 300px;
             background-image: url(fotos/960b86d8.jpg);
-            background-size: cover;
+            background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
+            /* border: 1px solid red; */
           }
 
-          & .merch-price {
+          .merch-price {
             color: var(--Text-Color);
             margin: 1rem 0rem -1rem 0rem;
             font-family: Montserrat;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+
           }
 
-          & button {
+          button {
             border: 4px solid #909090;
             background-color: transparent;
-            width: 228px;
+            width: 100%;
             height: 52px;
             font-family: Montserrat;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
             color: var(--Text-Color);
+
           }
         }
+
       }
     }
   }
 }
 
-/* ==========================
-   PARTNERS
-========================== */
 .partners {
   height: 30vh;
   width: 100%;
 
-  & .partners-header {
+
+  .partners-header {
     width: 100%;
     background-color: var(--color-EVMer);
     height: 40px;
 
-    & h1 {
+    h1 {
       text-transform: uppercase;
       text-align: start;
       margin-left: 6.5rem;
+
     }
   }
 
-  & .content-partners {
+  .content-partners {
     height: 60%;
     width: 100%;
     background-color: #BDBDBD;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    & .content-img {
+    .content-img {
+      /* border: 1px solid red; */
       height: 100%;
       width: 90%;
       display: flex;
@@ -792,8 +981,7 @@ header {
       justify-content: center;
       gap: 9rem;
 
-      & .partnerimg-left,
-      & .partnerimg-right {
+      .partnerimg-left {
         height: 100%;
         width: 20%;
         background-image: url(fotos/logoGranada.png);
@@ -803,7 +991,7 @@ header {
         opacity: .67;
       }
 
-      & .partnerimg-center {
+      .partnerimg-center {
         height: 100%;
         width: 30%;
         background-image: url(fotos/saikoLogoWhite.svg);
@@ -811,164 +999,222 @@ header {
         background-position: center center;
         background-repeat: no-repeat;
       }
+
+      .partnerimg-right {
+        height: 100%;
+        width: 20%;
+        background-image: url(fotos/logoGranada.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: .67;
+      }
+
     }
+
   }
 
-  & .partners-footer {
+  .partners-footer {
     width: 100%;
     background-color: var(--color-EVMer);
     height: 40px;
   }
 }
 
-/* ==========================
-   CONTACT
-========================== */
 .contact {
-  height: 130vh;
   width: 100%;
+  text-align: center;
 
-  & .contact-header {
-    padding: 4rem 0 0rem 0;
+  .contact-header {
+    padding: 4rem 0 0 0;
     font-size: 2rem;
     font-family: Caprasimo;
-    text-align: center;
   }
 
-  & .contact-content {
-    border: 1px solid red;
+  .contact-content {
+    /* border: 1px solid red; */
     width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    height: 900px;
 
-    & .contact-content-left {
-      margin-top: 4rem;
-      height: 70%;
-      width: 60%;
-      border: 1px solid blue;
+    display: flex;
+
+    .contact-content-left {
+      padding-top: 5rem;
+      height: 80%;
+      width: 50%;
+      /* border: 1px solid blue; */
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 6.5rem;
 
-      & form {
+      form {
         width: 70%;
-        height: 100%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
+
         background-color: var(--color-EVMer);
         border: 20px solid #C7C7C7;
 
-        & .name,
-        & .email,
-        & .descripcion {
+        .name {
           border: 2px solid var(--PrimaryColor);
           background-color: transparent;
           color: var(--PrimaryColor);
+          height: 10%;
           width: 80%;
         }
 
-        & .name,
-        & .email { height: 10%; }
+        .email {
+          border: 2px solid var(--PrimaryColor);
+          background-color: transparent;
+          color: var(--PrimaryColor);
+          height: 10%;
+          width: 80%;
+        }
 
-        & .descripcion { height: 50%; }
+        .descripcion {
+          border: 2px solid var(--PrimaryColor);
+          background-color: transparent;
+          color: var(--PrimaryColor);
+          height: 50%;
+          width: 80%;
+        }
 
-        & input::placeholder,
-        & textarea::placeholder {
+
+        input::placeholder,
+        textarea::placeholder {
           color: white;
           padding: 3rem;
         }
+
+
+
       }
 
-      & .Accept {
+      .Accept {
+        margin-top: 1.5rem;
         padding: 1rem;
         font-family: Montserrat;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+        color: var(--Text-Color);
+        
       }
     }
 
-    & .contact-content-right {
+    .contact-content-right {
       position: relative;
-      margin-top: 4rem;
-      height: 80%;
-      width: 40%;
-      border: 1px solid green;
+
+      height: 100%;
+      width: 50%;
+      /* border: 1px solid green; */
+
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: start;
+
       z-index: 1;
 
-      & .header {
+      .header {
         font-family: Montserrat;
+        align-items: start;
         text-align: center;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         opacity: 1;
-        color: blue;
+        color: var(--Text-Color);
+        text-shadow: 1px 1px 2px var(--Text-Color);
         padding: 4rem;
         margin-top: 5rem;
-        font-size: 2.125rem;
-        background: transparent;
-        position: relative;
-        z-index: 2;
+        font-size: clamp(1.5rem, 1.054rem + 1.19vw, 2.125rem);
       }
 
-      & .content-contact {
-        position: relative;
-        z-index: 2;
+      .content-contact {
         font-family: Montserrat;
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: flex-start;
+        /* border: 1px solid orange; */
         width: 80%;
         height: 70%;
         gap: 1rem;
 
-        & h5 { font-size: 1.8rem; }
-        & p  { margin-top: -10px; font-size: 1.2rem; }
+        h5 {
+          font-size: clamp(1.3rem, 0.943rem + 0.952vw, 1.8rem);
+          text-shadow: 1px 1px 2px var(--Text-Color);
+          color: var(--Text-Color);
+        }
 
-        & .follow {
+        p {
+          margin-top: -10px;
+          font-size: 1.2rem;
+          color: var(--Text-Color);
+          
+        }
+
+        .follow {
           display: flex;
           flex-direction: column;
           justify-content: start;
           align-items: flex-start;
 
-          & .contentfollow {
+          .contentfollow {
             width: 200px;
             height: auto;
             display: flex;
             align-items: start;
-            gap: .5rem;
+            /* border: 1px solid red; */
 
-            & .spo {
-              height: 25px; width: 25px;
+            .headerfollow {
+              text-align: start;
+            }
+
+            .spo {
+              height: 25px;
+              width: 25px;
               background-image: url(fotos/social-spotify-svgrepo-com.svg);
-              background-size: contain; background-position: center; background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              background-repeat: no-repeat;
             }
-            & .ig {
-              height: 25px; width: 25px;
+
+            .ig {
+              height: 25px;
+              width: 25px;
               background-image: url(fotos/instagram-svgrepo-com.svg);
-              background-size: contain; background-position: center; background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              background-repeat: no-repeat;
             }
-            & .yt {
-              height: 25px; width: 25px;
+
+            .yt {
+              height: 25px;
+              width: 25px;
               background-image: url(fotos/social-youtube-svgrepo-com.svg);
-              background-size: contain; background-position: center; background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              background-repeat: no-repeat;
+              /* border: 1px solid blue; */
+
             }
-            & .f {
-              height: 25px; width: 25px;
+
+            .f {
+              height: 25px;
+              width: 25px;
               background-image: url(fotos/social-facebook-svgrepo-com.svg);
-              background-size: contain; background-position: center; background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center center;
+              background-repeat: no-repeat;
+
             }
           }
         }
 
-        & .logo {
+        .logo {
           width: 100%;
           height: 100%;
           background-image: url(fotos/saikoLogoWhite.svg);
@@ -979,219 +1225,745 @@ header {
         }
       }
 
-      /* Fondo con opacidad sin afectar al contenido */
-      &::before {
-        content: "";
-        position: absolute; inset: 0;
-        background-image: url("fotos/ChatGPT Image 24 oct 2025, 12_06_33.png");
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        opacity: 0.03;
-        z-index: 0;
-      }
+    }
+
+    .contact-content-right::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("fotos/ChatGPT Image 24 oct 2025, 12_06_33.png");
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      opacity: 0.03;
+      z-index: 0;
     }
   }
 }
 
-/* ==========================
-   FOOTER
-========================== */
 .footer{
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  text-align: center;
 
-  & .map iframe{
+  .map iframe{
     width: 100%;
     height: 45vh;
     display: block;
+
   }
 
-  & .truefooter{
+  .truefooter{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 55vh;
 
-    & .grayfooter{
-      width: 100%;
-      height: 40vh;
-      background-color: rgba(0, 0, 0, 0.55);
-      border: solid 1px red;
+    .grayfooter{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* border: solid 1px red; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    .logo-left{
+      width: 30%;
+      height: 80%;
+      background-image: url("fotos/saikoLogoWhite.svg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .content-center{
+      width: 30%;
+      height: 80%;
+
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
+      align-self: center;
       justify-content: center;
-      gap: 4rem;
+      gap: 1rem;
 
-      & .logo-left{
-        width: 30%;
-        height: 80%;
-        background-image: url("fotos/saikoLogoWhite.svg");
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
+      h3{
+        font-weight: 100;
+        
       }
-
-      & .content-center{
-        width: 30%;
-        height: 80%;
+      .content-legacy{
+        
+        font-family: Montserrat;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+      }
+    }
+
+    .social-right{
+      width: 30%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      gap: .8rem;
+
+      h3{
+        font-family: Montserrat;
+        font-weight: normal;
+        font-size: clamp(1.2rem, 0.986rem + 0.571vw, 1.5rem);
+
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
         align-self: center;
         justify-content: center;
         gap: 1rem;
+        
 
-        & h3{ font-weight: 100; }
 
-        & .content-legacy{
-          font-family: Montserrat;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: .5rem;
+        .spo {
+          height: 30px;
+          width: 30px;
+          background-image: url(fotos/social-spotify-svgrepo-com.svg);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        .ig {
+          height: 30px;
+          width: 30px;
+          background-image: url(fotos/instagram-svgrepo-com.svg);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        .yt {
+          height: 30px;
+          width: 30px;
+          background-image: url(fotos/social-youtube-svgrepo-com.svg);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          /* border: 1px solid blue; */
+
+        }
+
+        .f {
+          height: 30px;
+          width: 30px;
+          background-image: url(fotos/social-facebook-svgrepo-com.svg);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+
         }
       }
-
-      & .social-right{
-        width: 30%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-        gap: .8rem;
-
-        & h3{
-          font-family: Montserrat;
-          font-weight: normal;
-          font-size: 1.5rem;
-        }
-
-        & .social {
-          display: flex;
-          flex-direction: row;
-          align-self: center;
-          justify-content: center;
-          gap: 1rem;
-
-          & .spo, & .ig, & .yt, & .f {
-            height: 30px; width: 30px;
-            background-size: contain; background-position: center; background-repeat: no-repeat;
-          }
-          & .spo { background-image: url(fotos/social-spotify-svgrepo-com.svg); }
-          & .ig  { background-image: url(fotos/instagram-svgrepo-com.svg); }
-          & .yt  { background-image: url(fotos/social-youtube-svgrepo-com.svg); }
-          & .f   { background-image: url(fotos/social-facebook-svgrepo-com.svg); }
-        }
-      }
+      
     }
 
-    & .blackfooter{
+    }
+
+
+    .blackfooter{
       width: 100%;
       height: 15vh;
       background-color: rgba(0, 0, 0, 1);
+      /* border: solid 1px red; */
+      
       display: flex;
       align-items: center;
       justify-content: center;
 
-      & h3{
+      h3{
         font-family: Montserrat;
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+      }
+    }
+  }
+  
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1750px) {
+  .biography{
+    /* border: 1px solid red; */
+    
+    .partVid{
+      .vidyt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        height: 700px;
+        /* border: 3px solid red; */
+
+        iframe{
+          width: 1000px;
+          height: 650px;
+        }
+      }
+      
+    }
+    .timeline{
+      ul{
+        .timeline-item{
+          /* border: 3px solid red; */
+          
+        }
+        li{
+            /* border: 4px solid black; */
+            margin-bottom: 20px;
+          }
+        .timeline-item:last-child{
+          
+          /* border: 3px solid rgb(18, 52, 161); */
+          margin-top: -10px;
+          .timeline-card{
+            
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .onTour{
+    .contentonTour{
+      padding: auto;
+      width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 1610px) {
+
+    
+  .Hero-section{
+    header{
+      nav{
+        ul{
+          li:nth-child(1),
+          li:nth-child(2),
+          li:nth-child(3),
+          li:nth-child(4),
+          li:nth-child(5) {
+              display: none;
+              padding: 0;
+          }
+          li{
+            img {
+              width: 40px;
+              height: auto;
+            }
+          }
+          .burguer{
+            display: flex;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .biography{
+    /* border: 1px solid red; */
+    
+    .partVid{
+      .vidyt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 500px;
+        /* border: 5px solid blue; */
+        
+        iframe{
+          width: 900px;
+          height: 450px;
+        }
+
+      }
+      
+    }
+    
+  }
+
+  .timeline{
+    width: 100%;
+    padding: 0rem 8rem;
+    ul{
+      /* border:4px solid brown; */
+      left: 4rem;
+      margin-bottom: 2px;
+      /* right: 0; */
+      /* width: 100%; */
+      .timeline-item{
+
+        .timeline-year{
+          left: -3rem;
+          
+        }
+
+      }
+      li:last-child{
+         .timeline-card{
+          padding: 2rem;
+          margin-left: -4rem;
+          margin-bottom: -10px;
+          
+         }
+      }
+    }
+  }
+  .onTour{
+    .contentonTour{
+      padding: auto;
+      width: 95%;
+    }
+  }
+  .events{
+    .eventcontent{
+      .eventsDay{
+        a{
+          width: 16%;
+        }
+      }
+    }
+  }
+  .merchandising{
+    .content-merch{
+      width: 100%;
+      /* border: 5px solid saddlebrown; */
+      .merch-grid{
+        flex-flow: row wrap;
+        /* border: 5px solid saddlebrown; */
+        justify-content: center;
+        gap: 10rem;
+      }
+    }
+  }
+
+  
+}
+
+@media screen and (max-width: 1550px) {
+  .wrapper{
+    /* border: 4px solid rgb(212, 0, 255); */
+  
+  }
+  .heroOther{
+    .conText{
+      .textheroOther{
+        width: 85%;
+      }
+    }
+  }
+  .events{
+    .eventcontent{
+      .eventsDay{
+        a{
+          width: 18%;
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 1320px) {
+  .wrapper{
+    /* border: 4px solid rgb(81, 255, 0); */
+  
+  }
+  .biography{
+    .partVid{
+
+      .vidyt{
+        width: 100%;
+        height: auto;
+      }
+
+      .tat1, .tat2{
+        display: none;
+      }
+      
+    }
+    .timeline{
+      display: none;
+    }
+    .firsTimeline{
+      display: block;
+    } 
+  }
+  .album{
+    .album-subheader{
+      padding: 2rem;
+      margin: 0;
+      /* border: red 1px solid; */
+      justify-content: center;
+      h2:nth-child(2){
+        display: none;
+      }
+    }
+    .content-album{
+      /* border: 1px solid red; */
+      flex-direction: column;
+      justify-content: start;
+      align-self: center;
+      height: 1500px;
+      .img-album{
+        margin: 0;
+        /* border: 1px solid blue; */
+        width: 100%;
+
+      
+      }
+    }
+  }
+  .onTour{
+    padding: 5rem 0 8rem 0;
+    .onTourheader{
+      margin-top: 0%;
+    }
+    .contentonTour{
+      padding-top: 3rem;
+      border: 1px solid saddlebrown;
+      width: 100%;
+      height: 100%;
+
+      .onTourimg{
+        width: 100%;
+        height: 500px;
+          margin: 0;
+        padding: 0;
+      }
+      .onTourmap{
+        height: 500px;
+        width: 100%;
+      
       }
     }
   }
 }
 
-/* ===========================================================
-   RESPONSIVE
-=========================================================== */
+@media screen and (max-width: 1000px) {
+  .wrapper{
+    overflow: hidden;
+    /* border: 4px solid rgb(81, 255, 0); */
+    
+  }
+  header{
+      nav{
+        ul{
+          li:nth-child(1),
+          li:nth-child(2),
+          li:nth-child(3),
+          li:nth-child(4),
+          li:nth-child(5),
+          li:nth-child(6), a {
+              display: none;
+              padding: 0;
+          }
+          
+          
+      }
+    }
+  }
+  .hero{
+    display: flex;
+    justify-content: center;
+    .content{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      /* bottom: ; */
+      top: 50%;
+      text-shadow: 2px 2px 4px var(--Text-Color);
+    }
+  }
+  .heroOther{
+    display: flex;
+    /* border: 3px solid blue; */
+    height: 1000px;
+    flex-direction: column;
+    padding-top: 2rem;
 
-/* ≥992px y ≤1200px */
-@media (max-width: 1200px) {
-  header nav ul { gap: 1rem; }
-  .hero .content { width: 70%; margin-top: 140px; }
+    .conText{
+      justify-content: start;
+      /* border: 3px solid brown; */
+      height: 40%;
+      flex: 0;
 
-  .heroOther .textheroOther { width: 80%; font-size: 1.9rem; }
+      .btn-primary{
+        display: none;
+      }
+    }
 
-  .timeline ul li .timeline-card { width: 85%; margin-left: 8%; }
+    .imgheroOther{
+      /* border: #333333 4px solid; */
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    }
+  .biography{
+    .partVid{
 
-  .album .album-subheader { margin: 2rem 10rem; }
-  .album .content-album { flex-direction: column; height: auto; gap: 3rem; }
-  .album .content-album .img-album { width: 70%; height: 400px; margin: 0 auto; }
-  .album .content-album .container-songs-album { width: 90%; }
+      .vidyt{
+        width: 100%;
+        height: auto;
+      }
+
+      .tat1, .tat2{
+        display: none;
+      }
+      
+    }
+    
+    .timeline{
+      /* margin: 0; */
+      /* padding: 0; */
+      /* display: none; */
+      
+      ul::before{
+        /* height: 3px; */
+        /* border: 3px solid brown; */
+        display: none;
+        margin: 0;
+        padding: 0; 
+        left: 0;
+        li::before{
+          display: none;
+        }
+      }
+      
+    }
+  }
+   
+    
+
 }
 
-/* ≤992px */
-@media (max-width: 992px) {
-  header { flex-direction: column; height: auto; }
-  header .branding { height: 100px; margin-bottom: 1rem; }
-
-  .hero .content { width: 80%; margin-top: 110px; }
-
-  .heroOther { flex-direction: column; height: auto; }
-  .heroOther .imgheroOther { width: 100%; height: 60vh; background-size: cover; }
-
-  .biography .partVid { flex-direction: column; margin: 0 1rem; }
-  .biography iframe { width: 100%; height: 400px; }
-
-  .events .eventsDay { flex-direction: column; gap: 1rem; }
-
-  .merchandising .merch-grid { flex-wrap: wrap; justify-content: center; }
-  .merchandising .merch-cardborder { width: 45%; height: auto; }
-
-  .contact .contact-content {
-    flex-direction: column; align-items: center;
+@media screen and (max-width: 650px) {
+  .wrapper{
+    border: 4px solid rgb(72, 255, 0);
+  
   }
-  .contact .contact-content-left,
-  .contact .contact-content-right {
-    width: 90%; margin: 1rem 0;
+  .Hero-section{
+    header{
+      .branding{
+        height: 50%;
+      }
+    }
+   }
+  
+  .heroOther{
+    border: 1px solid red;
+    align-items: center;
+    .conText{
+      padding: 0;
+      margin: 0;
+    }
   }
-}
+   .biography{
+    .firsTimeline{
+      .timeline2{
+        /* width: 100%; */
+        padding: 2rem;
+        .card{
+          padding: 2rem 0;
+          p, img{
+            width: 90%;
+          }
+        }
+      }
+    }
+   }
 
-/* ≤768px */
-@media (max-width: 768px) {
-  header nav ul { flex-direction: column; align-items: center; gap: 1rem; }
+   .album{
+    .content-album{
+      height: 100%;
+      .img-album{
+        width: 100%;
+        height: 520px;
+      }
+      .container-songs-album{
+        /* border: 1px solid brown; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        .cont-left{
+          width: 100%;
+          /* border: 1px solid brown; */
+          padding: 1rem;
 
-  .hero .content { width: 90%; }
-  .hero .btn-primary { width: 80%; font-size: 1.5rem; }
+          .cont-song{
+            width: 100%;
+            justify-content: center;
+          }
+        }
+        .cont-right{
+          width: 100%;
+          /* border: 1px solid brown; */
+          padding: 1rem;
+          .cont-song{
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .other-album{
+      .content-other-album{
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid red; */
+        .oa-left{
+          width: 100%;
+        }
+        .oa-right{
+          width: 100%;
+        }
+      }
+    }
+    
+   }
+   .onTour{
+    .contentonTour{
+      flex-direction: column;
+      
+      .onTourmap{
+        /* border: 3px solid brown; */
+        background-position: center center;
+      }
+    }
+   }
+   .events{
+    .eventcontent{
+      padding: 2rem;
+      gap: 1rem;
+      .eventsDay{
+        flex-direction: column;
+        align-items: start;
+        height: 1000%;
+        padding: 2rem;
+        margin: 0;
+        background-color: var(--color-EVMer);
+        border: var(--color-border) 10px solid;
+        gap: 0;
 
-  .timeline ul::before { left: 2%; }
-  .timeline ul li .timeline-year { left: -8%; font-size: 1rem; }
-  .timeline ul li .timeline-card p { font-size: 1.1rem; }
+        .differentday{
+          width: fit-content;
+          align-items: start;
+          height: fit-content;
+          background-color: var(--color-border);
+          padding: 1rem;
+          margin: 0;
+        }
 
-  .album .album-subheader { margin: 1.2rem 2rem; }
-  .album .content-album .img-album { width: 90%; }
-  .album .content-album .container-songs-album { flex-direction: column; }
-
-  .merchandising .merch-cardborder { width: 80%; }
-
-  .partners .content-img { flex-direction: column; gap: 2rem; }
-
-  .footer .truefooter .grayfooter {
-    flex-direction: column; gap: 2rem; height: auto; padding: 2rem 0;
-  }
-  .footer .truefooter .grayfooter .logo-left,
-  .footer .truefooter .grayfooter .content-center,
-  .footer .truefooter .grayfooter .social-right { width: 80%; height: auto; }
-  .footer .blackfooter h3 { text-align: center; padding: 0 1rem; }
-}
-
-/* ≤480px */
-@media (max-width: 480px) {
-  .hero .where { font-size: 1.2rem; }
-  .hero .btn-primary { height: 60px; font-size: 1.2rem; }
-
-  .heroOther .textheroOther { font-size: 1.3rem; width: 90%; }
-
-  .album iframe { height: 300px; }
-
-  .contact .contact-content-right .content-contact h5 { font-size: 1.3rem; }
-  .contact .contact-content-right .content-contact p { font-size: 1rem; }
-
-  .footer .blackfooter h3 { font-size: 1rem; }
+        .day{
+          width: fit-content;
+          align-items: start;
+          height: fit-content;
+          background-color: var(--color-border);
+          padding: 1rem;
+          
+        }
+        .textdy{
+          width: 100%;
+          background-color: var(--color-border);
+          height: fit-content;
+          padding: 1rem;
+          /* border: blue 1px solid; */
+        }
+        a{
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+    }
+   }
+   .merchandising{
+    .content-merch{
+      /* width: 100%; */
+      .merch-logo{
+        width: 80%;
+      }
+      .merch-grid{
+        flex-flow: column;
+        border: 1px solid brown;
+        gap: 4rem;
+        .merch-cardborder{
+          width: 100%;
+          /* border: 1px solid bla; */
+        }
+      }
+    }
+   }
+   .partners{
+    .content-partners{
+      border: 1px solid brown;
+      height: fit-content;
+      .content-img{
+        gap: 0;
+        .partnerimg-left{
+          height: 100px;
+          background-size: cover;
+          width: 20%;
+           /* border: 1px solid blue; */
+        }
+        .partnerimg-center{
+          height: 100px;
+          background-size: contain;
+          width: 60%;
+          /* border: 1px solid blue; */
+        }
+        .partnerimg-right{
+          height: 100px;
+          background-size: cover;
+          width: 20%;
+           /* border: 1px solid blue; */
+        }
+      }
+    }
+   }
+   .contact{
+    .contact-content{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      .contact-content-left{
+        border: 1px solid blue;
+        width: 90%;
+        
+        form{
+          width: 90%;
+          height: 500px;
+        }
+      }
+    }
+   }
 }

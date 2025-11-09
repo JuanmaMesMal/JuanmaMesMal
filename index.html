@@ -10,22 +10,29 @@
 
 <body>
     <div class="wrapper">
-        <div class="Hero-section">
+        <div class="Hero-section" id="home">
             <header>
                 <div class="branding">
                     <div class="logo"></div>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Biography</a></li>
-                        <li><a href="">Albums</a></li>
-                        <li><a href="">On Tour</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#biography">Biography</a></li>
+                        <li><a href="#album">Albums</a></li>
+                        <li><a href="#onTour">On Tour</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li>
-                            <a href="" class="icon-cart"></a>
-                            <a href="" class="icon-login"></a>
+                            <a href="" class="icon-cart">
+                                <img src="fotos/shopping_cart_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> 
+                            </a>
+                            <a href="" class="icon-login">
+                                <img src="fotos/account_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </a>
                         </li>
+                        <div class="burguer">
+                            <span></span><span></span><span></span>
+                        </div>
                     </ul>
                 </nav>
             </header>
@@ -37,14 +44,14 @@
                         <span class="front">SAIKO</span>
                     </p>
                     <p class="where">De grana´ pal mundo</p>
-                    <a href="" class="btn-primary">See full Album</a>
+                    <a href="#album" class="btn-primary">See full Album</a>
                     <div class="product-hero"></div>
                 </div>
 
             </div>
         </div>
         <div class="difumin"></div>
-        <div class="heroOther">
+        <div class="heroOther" >
             <div class="conText">
                 <div class="textheroOther">
                     Saiko, the artist from Granada who
@@ -73,17 +80,93 @@
                 </div>
                 <div class="tat2"></div>
             </div>
+            <section class="firsTimeline">
 
+                <div class="logo"></div>
 
+                <div class="timeline2">
+                    <div class="year">2003</div>
+                    <div class="card">
+                        <p>
+                             Saiko, born Miguel Cantos Gómez in Granada, Spain, began his musical journey
+                            alongside his brother in a duo called Wido & Saiko. From those early studio
+                            sessions in his hometown, his passion for music and storytelling quickly became evident.
+                        </p>
+                        <img src="fotos/SRSPKLMNHZBH3MB6L5IVWAUCFQ.avif" alt="Saiko young">
 
+                    </div>
+                </div>
+
+                <div class="timeline2">
+                    <div class="year">2020</div>
+                    <div class="card">
+                        <p>
+                            In 2020, he started his solo career, crafting a distinctive urban sound that blends
+                            heartfelt melodies with raw emotion. His breakout came with songs like “Polaris”.
+                        </p>
+                        <img src="fotos/polaris.jpg" alt="Polaris cover">
+
+                    </div>
+                </div>
+
+                <div class="timeline2">
+                    <div class="year">2023</div>
+                    <div class="card">
+                        <p>
+                            In 2023, hits like “Supernova” and “Buenas” (with Quevedo) topped the
+                            charts, confirming his place among Spain’s leading urban artists.
+                        </p>
+                        <img src="fotos/supernova.jpg" alt="Supernova cover">
+
+                    </div>
+                </div>
+                
+                <div class="timeline2">
+                    <div class="year">2024</div>
+                    <div class="card">
+                        <p>
+                            By 2024, Saiko released his first studio album, “Sakura”, a project that
+                            reflected his maturity, versatility, and emotional depth. That same year, he
+                            achieved another milestone by becoming the main sponsor of
+                            Granada CF, proudly representing his city both in music and in sport.
+                        </p>
+                        <img src="fotos/lunasaiko_.jpg" alt="Sakura album">
+
+                    </div>
+                </div>
+
+                <div class="timeline2">
+                    <div class="year">2025</div>
+                    <div class="card">
+                        <p>
+                            By 2025, Saiko continued to evolve artistically with the release of <b>Natsukashii
+                            Yoru</b>, an album whose Japanese title means “nostalgic night.” This project
+                            showcases a more intimate and reflective side of the artist, blending urban
+                            rhythms with emotional storytelling. Through thirteen tracks, Saiko opens up
+                            about love, growth, and the passage of time, using nostalgia not as sadness but
+                            as a way to celebrate memories. <br><br>
+                            With <b>Natsukashii Yoru</b>, he explores new sounds that merge trap, pop, and
+                            electronic textures, offering a cinematic journey that reflects his maturity and
+                            versatility. The album also highlights his ability to balance introspective lyrics with
+                            infectious melodies, proving that his artistry goes far beyond commercial success.
+                            This release solidified Saiko’s position as one of the most creative voices in the
+                            new wave of Spanish music, connecting deeply with his audience both in
+                                emotion and authenticity.
+                        </p>
+                        <img src="fotos/ab67616d0000b273a9c6cb6a4e15f76db618d8a5.jfif" alt="Natsukashii Yoru cover">
+
+                    </div>
+                </div>
+
+            </section>
             <section class="timeline">
+
                 <ul>
+                    <li class="cabeza">
+                        
+                    </li>
                     <!-- 2003 -->
                     <li class="timeline-item">
-                        <div class="timeline-branch">
-                            <span class="timeline-dot"
-                                onclick="document.getElementById('card2003').style.display='block'">+</span>
-                        </div>
                         <div class="timeline-year">2003</div>
                         <div class="timeline-card" id="card2003">
                             <p>
@@ -97,9 +180,6 @@
 
                     <!-- 2020 -->
                     <li class="timeline-item">
-                        <div class="timeline-branch">
-                            <span class="timeline-dot">+</span>
-                        </div>
                         <div class="timeline-year">2020</div>
                         <div class="timeline-card" id="card2020">
                             <p>
@@ -112,9 +192,6 @@
 
                     <!-- 2023 -->
                     <li class="timeline-item">
-                        <div class="timeline-branch">
-                            <span class="timeline-dot">+</span>
-                        </div>
                         <div class="timeline-year">2023</div>
                         <div class="timeline-card" id="card2023">
                             <p>
@@ -127,9 +204,6 @@
 
                     <!-- 2024 -->
                     <li class="timeline-item">
-                        <div class="timeline-branch">
-                            <span class="timeline-dot">+</span>
-                        </div>
                         <div class="timeline-year">2024</div>
                         <div class="timeline-card" id="card2024">
                             <p>
@@ -144,18 +218,15 @@
 
                     <!-- 2025 -->
                     <li class="timeline-item">
-                        <div class="timeline-branch">
-                            <span class="timeline-dot">+</span>
-                        </div>
                         <div class="timeline-year">2025</div>
                         <div class="timeline-card" id="card2025">
                             <p>
                                 By 2025, Saiko continued to evolve artistically with the release of <b>Natsukashii
-                                    Yoru</b>, an album whose Japanese title means “nostalgic night.” This project
+                                Yoru</b>, an album whose Japanese title means “nostalgic night.” This project
                                 showcases a more intimate and reflective side of the artist, blending urban
                                 rhythms with emotional storytelling. Through thirteen tracks, Saiko opens up
                                 about love, growth, and the passage of time, using nostalgia not as sadness but
-                                as a way to celebrate memories.
+                                as a way to celebrate memories.<br><br>
                                 With <b>Natsukashii Yoru</b>, he explores new sounds that merge trap, pop, and
                                 electronic textures, offering a cinematic journey that reflects his maturity and
                                 versatility. The album also highlights his ability to balance introspective lyrics with
@@ -169,7 +240,8 @@
                     </li>
                 </ul>
             </section>
-            <section class="album">
+        </div>
+            <section class="album" id="album">
                 <div class="album-header">
                     <h1>Albums</h1>
                 </div>
@@ -334,7 +406,7 @@
                     </div>
                 </div>
             </section>
-            <section class="onTour">
+            <section class="onTour" id="onTour">
                 <div class="onTourheader">
                     <h1>On Tour</h1>
                 </div>
@@ -429,7 +501,7 @@
 
                     </div>
                     <div class="eventsDay">
-                        <div class="different">
+                        <div class="differentday">
                             <p>20</p>
                             <p>October</p>
                             <p>2025</p>
@@ -442,7 +514,7 @@
 
                     </div>
                     <div class="eventsDay">
-                        <div class="different">
+                        <div class="differentday">
                             <p>15</p>
                             <p>November</p>
                             <p>2025</p>
@@ -492,7 +564,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
             <section class="partners">
@@ -508,7 +579,7 @@
                 </div>
                 <div class="partners-footer"></div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="contact-header">
                     <h1>Contact</h1>
                 </div>
@@ -601,11 +672,6 @@
                     </div>
                 </div>
             </section>
-
-        </div>
-
-
-
 
 </body>
 
