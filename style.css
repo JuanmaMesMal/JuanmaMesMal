@@ -686,7 +686,7 @@ header {
 
 .events {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-bottom: 6rem;
 
 
@@ -725,7 +725,7 @@ header {
     margin-top:4.5rem;
     justify-content: center;
     gap: 4rem;
-    border-bottom: 1px solid #333333;
+    /* border-bottom: 1px solid #333333; */
     padding-bottom: 2rem;
     
     
