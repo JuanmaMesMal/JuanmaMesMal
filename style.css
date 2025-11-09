@@ -248,6 +248,8 @@ header {
   .textBI {
     text-transform: uppercase;
     margin-bottom: 8%;
+    font-size: clamp(1.3rem, 0.514rem + 2.095vw, 2.4rem);
+    
   }
 
   .partVid {
@@ -516,6 +518,8 @@ header {
   .album-header {
     text-transform: uppercase;
     /* border: 1px solid green; */
+    font-family: "Wide Latin", serif;
+    font-size: clamp(1.3rem, 0.514rem + 2.095vw, 2.4rem);
   }
 
   .album-subheader {
@@ -526,6 +530,8 @@ header {
     /* padding: 0; */
     margin: 3rem 30rem 0rem 20rem;
     /* border: 1px solid red;; */
+    font-family: "Wide Latin", serif;
+    font-size: clamp(0.8rem, 0.514rem + 0.762vw, 1.2rem);
 
   }
 
@@ -615,6 +621,8 @@ header {
     .other-album-text {
       text-transform: uppercase;
       margin: 3rem 0 4rem 0;
+      font-family: "Wide Latin", serif;
+      font-size: clamp(0.8rem, 0.514rem + 0.762vw, 1.2rem);
     }
 
     .content-other-album {
@@ -649,6 +657,8 @@ header {
     /* border: 1px solid green; */
     text-transform: uppercase;
     margin-top: 200px;
+    font-family: "Wide Latin", serif;
+    font-size: clamp(0.8rem, 0.514rem + 0.762vw, 1.2rem);
   }
 
   .contentonTour {
@@ -690,12 +700,15 @@ header {
   width: 100%;
   /* border: 1px solid red; */
   padding-bottom: 6rem;
+  
 
 
   
 
   .eventheader {
     height: 40px;
+    font-family:montserrat;
+
     background-color: var(--color-EVMer);
   }
 
@@ -729,7 +742,7 @@ header {
     margin-top:4.5rem;
     justify-content: center;
     gap: 4rem;
-    /* border-bottom: 1px solid #333333; */
+    border-bottom: 1px solid #333333;
     padding-bottom: 2rem;
     
     
@@ -825,6 +838,8 @@ header {
       text-transform: uppercase;
       text-align: start;
       margin-left: 6.5rem;
+      font-family: montserrat;
+
     }
   }
 
@@ -956,6 +971,7 @@ header {
     width: 100%;
     background-color: var(--color-EVMer);
     height: 40px;
+    font-family: montserrat;
 
     h1 {
       display: flex;
@@ -1033,7 +1049,8 @@ header {
   .contact-header {
     padding: 4rem 0 0 0;
     font-size: 2rem;
-    font-family: Caprasimo;
+    font-family: "Wide Latin", serif;
+    font-size: clamp(1.3rem, 0.514rem + 2.095vw, 2.4rem);
   }
 
   .contact-content {
@@ -1309,6 +1326,8 @@ header {
 
       h3{
         font-weight: 100;
+        font-family: Caprasimo;
+        font-size: clamp(1.4rem, 0.971rem + 1.143vw, 2rem);
         
       }
       .content-legacy{
