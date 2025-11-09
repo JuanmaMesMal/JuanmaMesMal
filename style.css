@@ -695,13 +695,15 @@ header {
   
 
   .eventheader {
-    height: 30px;
+    height: 40px;
     background-color: var(--color-EVMer);
   }
 
   h1 {
     text-transform: uppercase;
     text-align: start;
+    display: flex;    
+    
     margin-left: 6.5rem;
     margin-bottom: 2rem;
 
@@ -819,6 +821,7 @@ header {
     height: 40px;
 
     h1 {
+      display: flex;
       text-transform: uppercase;
       text-align: start;
       margin-left: 6.5rem;
@@ -955,6 +958,7 @@ header {
     height: 40px;
 
     h1 {
+      display: flex;
       text-transform: uppercase;
       text-align: start;
       margin-left: 6.5rem;
@@ -1330,7 +1334,7 @@ header {
       h3{
         font-family: Montserrat;
         font-weight: normal;
-        font-size: clamp(1.2rem, 0.986rem + 0.571vw, 1.5rem);
+        font-size: clamp(1.1rem, 0.643rem + 0.952vw, 1.5rem);
 
       }
 
@@ -2017,6 +2021,7 @@ header {
         }
       }
       .blackfooter {
+        width: 100% ;
         height: 100px;
       }
     }
@@ -2029,6 +2034,13 @@ header {
       
       .branding{
         height: 30%;
+      }
+    }
+    .hero{
+      
+      .content{
+        border: 1px solid blue;
+        width: 100%;
       }
     }
   }
@@ -2047,6 +2059,32 @@ header {
       .content-other-album{
         /* border: 3px solid blue; */
         width: 100%;
+      }
+    }
+  }
+  .events{
+      
+    h1{
+        justify-content: center;
+        margin: 0;
+        
+      }
+  }
+  .merchandising{
+    .merch-header{
+      h1{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+  .partners{
+    .partners-header{
+      h1{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
       }
     }
   }
