@@ -2002,4 +2002,45 @@ header {
       }
     }
    }
+   .footer {
+    .truefooter{
+      .grayfooter{
+        flex-direction: column;
+        height: 500px;
+        gap: 0;
+        .logo-left{
+          height:200px;
+        }
+      }
+    }
+   }
+}
+
+@media screen and (max-width: 450px) {
+  .Hero-section{
+    header {
+      
+      .branding{
+        height: 30%;
+      }
+    }
+  }
+  .biography{
+    .firsTimeline{
+      .logo{
+        height: 70px;
+      }
+    }
+  }
+  .album{
+    .other-album{
+      padding: 2rem;
+      border: 3px solid green;
+      width: 100%;
+      .content-other-album{
+        border: 3px solid blue;
+        width: 100%;
+      }
+    }
+  }
 }
