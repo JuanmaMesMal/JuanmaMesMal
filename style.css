@@ -87,6 +87,8 @@ header {
         flex-direction: column;
         justify-content: space-between;
         display: none;
+        cursor: pointer;
+        
 
 
         span{
@@ -2004,13 +2006,18 @@ header {
    }
    .footer {
     .truefooter{
+      height: 700px;
       .grayfooter{
         flex-direction: column;
-        height: 500px;
+        height: 600px;
         gap: 0;
+        /* border: 4px solid rebeccapurple; */
         .logo-left{
           height:200px;
         }
+      }
+      .blackfooter {
+        height: 100px;
       }
     }
    }
@@ -2035,11 +2042,43 @@ header {
   .album{
     .other-album{
       padding: 2rem;
-      border: 3px solid green;
+      /* border: 3px solid green; */
       width: 100%;
       .content-other-album{
-        border: 3px solid blue;
+        /* border: 3px solid blue; */
         width: 100%;
+      }
+    }
+  }
+  .contact{
+    .contact-content{
+      /* border: 2px solid red; */
+      margin-bottom: 2rem;
+      .contact-content-right {
+        /* border: 2px solid blue; */
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .content-contact{
+          /* text-align: center; */
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          
+          .follow{
+            align-items: center;
+            justify-content: center;
+            
+            .contentfollow{
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              padding: .5rem;
+            }
+          }
+        }
       }
     }
   }
