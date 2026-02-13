@@ -25,7 +25,7 @@
 
 
 ## Github Stats
-[![GitHub Streak](https://streak-stats.demolab.com/?user=JuanmaMesMal)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=JuanmaMesMal&theme=dark&hide_border=true&short_numbers=true&date_format=j%2Fn%5B%2FY%5D)](https://git.io/streak-stats)
 
 ## Programming Languages
 
