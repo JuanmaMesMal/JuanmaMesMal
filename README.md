@@ -1,16 +1,24 @@
-## Hi there 👋
+![Banner](assets/img/banner.png)
 
-<!--
-**JuanmaMesMal/JuanmaMesMal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Who am I?
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ ```python
+  class WhoAmI:
+    user = 'Juanma'
+	current_edu = "IES Zaidin Vergeles"
+    currently_learning = "Javascript / Java"
+    fun_fact = "I love photography"
+	hobbies = [
+				'Music',
+                'Photography',
+			 	'Gaming',
+				'Sci-Fi Movies'
+			]
+	
+	def getCity():
+		return Granada()
+	
+	def Ambitions():
+		DevelopWebPages()
+		CreateProjects()
+	
