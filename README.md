@@ -1,4 +1,4 @@
-![Banner](assets/img/banner.png)
+![Banner](assets/img/banner1.png)
 
 ## Who am I?
 
@@ -22,3 +22,4 @@
 		DevelopWebPages()
 		CreateProjects()
 	
+[![GitHub Streak](https://streak-stats.demolab.com/?user=JuanmaMesMal)](https://git.io/streak-stats)
