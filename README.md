@@ -43,9 +43,9 @@
 <h2> Connect with Me</h2>
 
 <p>
-    <a href="https://linkedin.com/in/jaydeepyadav"><img alt="Linkedin" title="Juanma Mesa Malagón Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-    <a href="https://instagram.com/bad_boy_official2"><img alt="Instagram" title="Juanma Mesa Malagón Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-    <a href="mailto:yadavjay374@gmail.com"><img alt="Gmail" title="Juanma Mesa Malagón Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-    <a href="https://github.com/Jaydeep-Yadav"><img alt="Github" title="Juanma Mesa Malagón Github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
+    <a href="https://www.linkedin.com/in/juanmamesmal2003/"><img alt="Linkedin" title="Juanma Mesa Malagón Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+    <a href="https://instagram.com/whoisblanco_"><img alt="Instagram" title="Juanma Mesa Malagón Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+    <a href="mailto:juanmamesmal2003@gmail.com"><img alt="Gmail" title="Juanma Mesa Malagón Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+    <a href="https://github.com/JuanmaMesMal"><img alt="Github" title="Juanma Mesa Malagón Github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
