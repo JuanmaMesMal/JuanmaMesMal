@@ -42,7 +42,7 @@
 
 <h2 align="center"> Connect with Me</h2>
 
-< align="center">
+<p align="center">
     <a href="https://linkedin.com/in/jaydeepyadav"><img alt="Linkedin" title="Juanma Mesa Malagón Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
     <a href="https://instagram.com/bad_boy_official2"><img alt="Instagram" title="Juanma Mesa Malagón Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
     <a href="mailto:yadavjay374@gmail.com"><img alt="Gmail" title="Juanma Mesa Malagón Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
